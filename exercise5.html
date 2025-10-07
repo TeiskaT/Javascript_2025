@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id = "randomImage" src="" alt="Random Image" style="width: 300px; height: auto;">
+    <script>
+        let images= [
+            "https://images.sanoma-sndp.fi/86460c3ade17f3458561f6737e4d77fe/normal/978.avif",
+            "https://www.helsinki.fi/assets/drupal/styles/hero_image/s3/media-image/Tiedekulma_Suomi_shutterstock_web.jpg.webp?itok=lBcc2-fw",
+            "https://admin.espoo.fi/sites/default/files/styles/teaser_xlarge/public/2025-08/Saaristopaiva_2024-06-05-17.jpg?itok=QB3QFBpY"
+        ];
+         function loadRandomImage() {
+            let randomIndex = Math.floor(Math.random() * images.length);
+            document.getElementById("randomImage").src = images[randomIndex];
+        }
+        loadRandomImage();
+
+    </script>
+</body>
+</html>
